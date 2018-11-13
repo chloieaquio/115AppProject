@@ -49,6 +49,7 @@
         android:id="@+id/button10"
         android:layout_width="92dp"
         android:layout_height="29dp"
+        android:onClick="prevAct"
         android:text="BACK"
         android:textSize="10sp"
         app:layout_constraintStart_toStartOf="parent"
