@@ -56,4 +56,9 @@ public class flexibilityActivity extends AppCompatActivity {
         startActivity(i);
     }
 
+
+    public void goVideo(View v){
+        Intent i = new Intent(this, flexOne.class);
+        startActivity(i);
+    }
 }

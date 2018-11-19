@@ -9,19 +9,19 @@ import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerView;
 
-public class videoPreview extends YouTubeBaseActivity implements YouTubePlayer.OnInitializedListener
+public class flexOne extends YouTubeBaseActivity implements YouTubePlayer.OnInitializedListener
         , YouTubePlayer.PlaybackEventListener, YouTubePlayer.PlayerStateChangeListener {
 
     YouTubePlayerView playerView;
     String API_KEY = "AIzaSyAseKJmJjvmdfEZ4Q5yGqnpD4DSdPv8tws";
-    String VIDEO_ID = "mzhQCmbjd54";
+    String VIDEO_ID = "KJaWIBg15n0";
 
     /*********************************************************************************************/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_video_preview);
+        setContentView(R.layout.activity_flex_one);
         Log.d("LIFECYCLE", "onCreate() executed");
         playerView = (YouTubePlayerView)findViewById(R.id.playerview);
         playerView.initialize(API_KEY, this);
