@@ -1,8 +1,8 @@
 package com.aquio.icban;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 
@@ -53,6 +53,11 @@ public class Aerobics extends AppCompatActivity {
 
     public void prevAct(View v){
         Intent i = new Intent(this, homeActivity.class);
+        startActivity(i);
+    }
+
+    public void goVideo(View v){
+        Intent i = new Intent(this, videoPreview.class);
         startActivity(i);
     }
 

@@ -7,4 +7,12 @@
     android:background="@color/colorPrimary"
     tools:context=".videoPreview">
 
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/playerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        app:layout_constraintTop_toTopOf="parent"></com.google.android.youtube.player.YouTubePlayerView>
+
 </android.support.constraint.ConstraintLayout>
