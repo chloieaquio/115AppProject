@@ -45,15 +45,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button10"
-        android:layout_width="92dp"
-        android:layout_height="29dp"
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="30dp"
+        android:layout_height="41dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
         android:onClick="prevAct"
-        android:text="BACK"
-        android:textSize="10sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
 
     <TextView
         android:id="@+id/textView2"
