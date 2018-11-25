@@ -1,8 +1,9 @@
 package com.aquio.icban;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import android.net.Uri;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 
@@ -51,9 +52,24 @@ public class seriesActivity extends AppCompatActivity {
         Log.d("LIFECYCLE", "onRestart() event");
     }
 
+    /*********************************************************************************************/
+
     public void prevAct(View v){
         Intent i = new Intent(this, homeActivity.class);
         startActivity(i);
     }
 
+    /*********************************************************************************************/
+
+    public void goVideoSer(View v){
+        Uri uri = Uri.parse("https://www.youtube.com/watch?v=1919eTCoESo");
+        Intent i = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(i);
+    }
+
+    public void goVideoSer2 (View v){
+        Uri uri = Uri.parse("https://www.youtube.com/watch?v=ITPcN8U_tYg");
+        Intent i = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(i);
+    }
 }

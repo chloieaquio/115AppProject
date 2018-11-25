@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">115PROJECT</string>
     <string name="title_activity_home">homeActivity</string>
+
+    <string name="thumbnail_image_view_desc">Youtube Video thumbnail image view</string>
+    <string name="close_player_activity">Close Player activity</string>
+
 </resources>

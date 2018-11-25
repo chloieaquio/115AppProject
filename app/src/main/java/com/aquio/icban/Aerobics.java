@@ -1,6 +1,7 @@
 package com.aquio.icban;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -51,14 +52,35 @@ public class Aerobics extends AppCompatActivity {
         Log.d("LIFECYCLE", "onRestart() event");
     }
 
+    /*********************************************************************************************/
+
     public void prevAct(View v){
         Intent i = new Intent(this, homeActivity.class);
         startActivity(i);
     }
+
+    /*********************************************************************************************/
 
     public void goVideo(View v){
         Intent i = new Intent(this, videoPreview.class);
         startActivity(i);
     }
 
+    public void goVideo2 (View v){
+        Uri uri = Uri.parse("https://www.youtube.com/watch?v=HRkNfdlm5Qs");
+        Intent i = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(i);
+    }
+
+    public void goVideo3 (View v){
+        Uri uri = Uri.parse("https://www.youtube.com/watch?v=BunBLMgPhyk");
+        Intent i = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(i);
+    }
+
+    public void goVideo4 (View v){
+        Uri uri = Uri.parse("https://www.youtube.com/watch?v=-kQpTMkQo3Y");
+        Intent i = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(i);
+    }
 }

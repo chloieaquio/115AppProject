@@ -1,8 +1,9 @@
 package com.aquio.icban;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import android.net.Uri;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 
@@ -51,14 +52,37 @@ public class flexibilityActivity extends AppCompatActivity {
         Log.d("LIFECYCLE", "onRestart() event");
     }
 
+    /*********************************************************************************************/
+
     public void prevAct(View v){
         Intent i = new Intent(this, homeActivity.class);
         startActivity(i);
     }
 
+    /*********************************************************************************************/
 
-    public void goVideo(View v){
-        Intent i = new Intent(this, flexOne.class);
+    public void goVideoFlex(View v){
+        Uri uri = Uri.parse("https://www.youtube.com/watch?v=KJaWIBg15n0");
+        Intent i = new Intent(Intent.ACTION_VIEW, uri);
         startActivity(i);
     }
+
+    public void goVideoFlex2 (View v){
+        Uri uri = Uri.parse("https://www.youtube.com/watch?v=wUXpigOkBfY");
+        Intent i = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(i);
+    }
+
+    public void goVideoFlex3 (View v){
+        Uri uri = Uri.parse("https://www.youtube.com/watch?v=u_YaHaTg5aE");
+        Intent i = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(i);
+    }
+
+    public void goVideoFlex4 (View v){
+        Uri uri = Uri.parse("https://www.youtube.com/watch?v=9jAyRP0bqKA");
+        Intent i = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(i);
+    }
+
 }

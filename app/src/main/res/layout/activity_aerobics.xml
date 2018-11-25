@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
-    tools:context=".flexibilityActivity">
+    tools:context=".Aerobics">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -92,6 +92,14 @@
                     android:layout_height="130dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp" />
+
+                <Button
+                    android:id="@+id/button8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="goLink"
+                    android:text="Button" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -230,6 +238,20 @@ Walking workouts for seniors"
                 app:layout_constraintEnd_toEndOf="@+id/videoView2"
                 app:layout_constraintStart_toStartOf="@+id/videoView2"
                 app:layout_constraintTop_toTopOf="@+id/videoView2" />
+
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="goVideo2"
+                android:text="govid2" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="goVideo3"
+                android:text="govid3" />
 
         </LinearLayout>
     </ScrollView>

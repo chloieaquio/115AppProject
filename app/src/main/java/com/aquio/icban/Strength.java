@@ -1,8 +1,9 @@
 package com.aquio.icban;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import android.net.Uri;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 
@@ -51,8 +52,36 @@ public class Strength extends AppCompatActivity {
         Log.d("LIFECYCLE", "onRestart() event");
     }
 
+    /*********************************************************************************************/
+
     public void prevAct(View v){
         Intent i = new Intent(this, homeActivity.class);
+        startActivity(i);
+    }
+
+    /*********************************************************************************************/
+
+    public void goVideoStr(View v){
+        Uri uri = Uri.parse("https://www.youtube.com/watch?v=TGI5TFnY8Ck");
+        Intent i = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(i);
+    }
+
+    public void goVideoStr2 (View v){
+        Uri uri = Uri.parse("https://www.youtube.com/watch?v=C0wGIsdaPwQ");
+        Intent i = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(i);
+    }
+
+    public void goVideoStr3 (View v){
+        Uri uri = Uri.parse("https://www.youtube.com/watch?v=m6Ww8re14Uk");
+        Intent i = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(i);
+    }
+
+    public void goVideoStr4 (View v){
+        Uri uri = Uri.parse("https://www.youtube.com/watch?v=dJlFmxiL11s");
+        Intent i = new Intent(Intent.ACTION_VIEW, uri);
         startActivity(i);
     }
 
