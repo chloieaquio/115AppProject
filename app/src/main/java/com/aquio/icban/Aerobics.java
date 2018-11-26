@@ -62,7 +62,8 @@ public class Aerobics extends AppCompatActivity {
     /*********************************************************************************************/
 
     public void goVideo(View v){
-        Intent i = new Intent(this, videoPreview.class);
+        Uri uri = Uri.parse("https://www.youtube.com/watch?v=mzhQCmbjd54");
+        Intent i = new Intent(Intent.ACTION_VIEW, uri);
         startActivity(i);
     }
 

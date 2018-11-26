@@ -80,7 +80,7 @@ public class balanceActivity extends AppCompatActivity {
     }
 
     public void goVideoBal4 (View v){
-        Uri uri = Uri.parse("https://www.youtube.com/watch?v=mzhQCmbjd54&fbclid=IwAR3irqrjeyBOVgTtldJo7wD3IkHr-EQTiwKI_BI8-pQI88c8BESCFZzzPRA");
+        Uri uri = Uri.parse("https://www.youtube.com/watch?v=WqwUIK2JlS8");
         Intent i = new Intent(Intent.ACTION_VIEW, uri);
         startActivity(i);
     }
