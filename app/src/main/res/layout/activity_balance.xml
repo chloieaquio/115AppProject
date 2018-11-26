@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
-    tools:context=".flexibilityActivity">
+    tools:context=".balanceActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -50,12 +50,14 @@
                 android:layout_height="fill_parent"
                 android:orientation="horizontal">
 
-                <VideoView
-                    android:id="@+id/videoView1"
+                <ImageButton
+                    android:id="@+id/imageButton1"
                     android:layout_width="187dp"
                     android:layout_height="130dp"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp" />
+                    android:layout_marginTop="10dp"
+                    android:onClick="goVideoBal"
+                    app:srcCompat="@drawable/bvid1" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -87,12 +89,14 @@
                 android:layout_height="fill_parent"
                 android:orientation="horizontal">
 
-                <VideoView
-                    android:id="@+id/videoView2"
+                <ImageButton
+                    android:id="@+id/imageButton2"
                     android:layout_width="187dp"
                     android:layout_height="130dp"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp" />
+                    android:layout_marginTop="10dp"
+                    android:onClick="goVideoBal2"
+                    app:srcCompat="@drawable/bvid2" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -114,7 +118,7 @@
                         android:layout_width="138dp"
                         android:layout_height="84dp"
                         android:layout_marginLeft="10dp"
-                        android:text="No information is to be taken as medical or other health advice pertaining to any individual specific health or medical condition."
+                        android:text="Beginner exercises for balancing and toning"
                         android:textSize="10dp" />
 
                 </LinearLayout>
@@ -125,12 +129,14 @@
                 android:layout_height="fill_parent"
                 android:orientation="horizontal">
 
-                <VideoView
-                    android:id="@+id/videoView3"
+                <ImageButton
+                    android:id="@+id/imageButton3"
                     android:layout_width="187dp"
                     android:layout_height="130dp"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp" />
+                    android:layout_marginTop="10dp"
+                    android:onClick="goVideoBal3"
+                    app:srcCompat="@drawable/bvid3" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -162,12 +168,14 @@
                 android:layout_height="fill_parent"
                 android:orientation="horizontal">
 
-                <VideoView
-                    android:id="@+id/videoView4"
+                <ImageButton
+                    android:id="@+id/imageButton4"
                     android:layout_width="187dp"
                     android:layout_height="130dp"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp" />
+                    android:layout_marginTop="10dp"
+                    android:onClick="goVideoBal4"
+                    app:srcCompat="@drawable/bvid4" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -191,6 +199,31 @@
                         android:layout_marginLeft="10dp"
                         android:text="Fitness expert Sandra Augustin demonstrates simple balance exercises to engage your core and strengthen your balance."
                         android:textSize="10dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="438dp"
+                    android:layout_height="110dp"
+                    android:orientation="vertical"
+                    tools:layout_editor_absoluteX="231dp"
+                    tools:layout_editor_absoluteY="404dp">
+
+                    <TextView
+                        android:id="@+id/title5"
+                        android:layout_width="177dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="120dp"
+                        android:layout_marginTop="30dp"
+                        android:text="MORE TO COME.."
+                        android:textSize="20sp"
+                        android:textStyle="bold|italic" />
+
                 </LinearLayout>
             </LinearLayout>
 
