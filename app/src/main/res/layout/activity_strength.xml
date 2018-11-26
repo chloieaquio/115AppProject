@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
-    tools:context=".flexibilityActivity">
+    tools:context=".Strength">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -50,12 +50,14 @@
                 android:layout_height="fill_parent"
                 android:orientation="horizontal">
 
-                <VideoView
-                    android:id="@+id/videoView1"
+                <ImageButton
+                    android:id="@+id/imageButton1"
                     android:layout_width="187dp"
                     android:layout_height="130dp"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp" />
+                    android:layout_marginTop="10dp"
+                    android:onClick="goVideoStr"
+                    app:srcCompat="@drawable/stvid1" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -87,12 +89,15 @@
                 android:layout_height="fill_parent"
                 android:orientation="horizontal">
 
-                <VideoView
-                    android:id="@+id/videoView2"
+                <ImageButton
+                    android:id="@+id/imageButton2"
                     android:layout_width="187dp"
                     android:layout_height="130dp"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp" />
+                    android:layout_marginTop="10dp"
+                    android:onClick="goVideoStr2"
+                    app:srcCompat="@drawable/stvid2" />
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -124,12 +129,15 @@
                 android:layout_height="fill_parent"
                 android:orientation="horizontal">
 
-                <VideoView
-                    android:id="@+id/videoView3"
+                <ImageButton
+                    android:id="@+id/imageButton3"
                     android:layout_width="187dp"
                     android:layout_height="130dp"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp" />
+                    android:layout_marginTop="10dp"
+                    android:onClick="goVideoStr3"
+                    app:srcCompat="@drawable/stvid3" />
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -161,13 +169,15 @@
                 android:layout_height="fill_parent"
                 android:orientation="horizontal">
 
-                <VideoView
-                    android:id="@+id/videoView4"
+                <ImageButton
+                    android:id="@+id/imageButton4"
                     android:layout_width="187dp"
                     android:layout_height="130dp"
-                    android:layout_marginBottom="20dp"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp" />
+                    android:layout_marginTop="10dp"
+                    android:onClick="goVideoStr4"
+                    app:srcCompat="@drawable/stvid4" />
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -202,7 +212,7 @@
 
                 <LinearLayout
                     android:layout_width="438dp"
-                    android:layout_height="155dp"
+                    android:layout_height="110dp"
                     android:orientation="vertical"
                     tools:layout_editor_absoluteX="231dp"
                     tools:layout_editor_absoluteY="404dp">
@@ -219,7 +229,6 @@
 
                 </LinearLayout>
             </LinearLayout>
-
 
         </LinearLayout>
     </ScrollView>

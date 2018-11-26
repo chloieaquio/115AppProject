@@ -50,12 +50,14 @@
                 android:layout_height="fill_parent"
                 android:orientation="horizontal">
 
-                <VideoView
-                    android:id="@+id/videoView1"
+                <ImageButton
+                    android:id="@+id/imageButton1"
                     android:layout_width="187dp"
                     android:layout_height="130dp"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp" />
+                    android:layout_marginTop="10dp"
+                    android:onClick="goVideoFlex"
+                    app:srcCompat="@drawable/fvid1" />
 
                 <LinearLayout
                     android:layout_width="174dp"
@@ -76,7 +78,7 @@
                         android:layout_width="138dp"
                         android:layout_height="84dp"
                         android:layout_marginLeft="10dp"
-                        android:text="Great for after a hard workout. Stretching helps improve your flexibility, which in turn improve your athletic performance and decrease your risk of injury. Enjoy!"
+                        android:text="Stretching helps improve your flexibility, which in turn improve your athletic performance and decrease your risk of injury. Enjoy!"
                         android:textSize="10dp" />
 
                 </LinearLayout>
@@ -87,12 +89,14 @@
                 android:layout_height="fill_parent"
                 android:orientation="horizontal">
 
-                <VideoView
-                    android:id="@+id/videoView2"
+                <ImageButton
+                    android:id="@+id/imageButton2"
                     android:layout_width="187dp"
                     android:layout_height="130dp"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp" />
+                    android:layout_marginTop="10dp"
+                    android:onClick="goVideoFlex2"
+                    app:srcCompat="@drawable/fvid2" />
 
                 <LinearLayout
                     android:layout_width="174dp"
@@ -124,12 +128,14 @@
                 android:layout_height="fill_parent"
                 android:orientation="horizontal">
 
-                <VideoView
-                    android:id="@+id/videoView3"
+                <ImageButton
+                    android:id="@+id/imageButton3"
                     android:layout_width="187dp"
                     android:layout_height="130dp"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp" />
+                    android:layout_marginTop="10dp"
+                    android:onClick="goVideoFlex3"
+                    app:srcCompat="@drawable/fvid3" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -150,7 +156,7 @@
                         android:layout_width="138dp"
                         android:layout_height="84dp"
                         android:layout_marginLeft="10dp"
-                        android:text="Back stretches routine shows you how to ease back stiffness and increase lower back flexibility. Six gentle and effective back stretches are demonstrated on the mat. "
+                        android:text="Back stretches routine shows you how to ease back stiffness and increase lower back flexibility. "
                         android:textSize="10dp" />
 
                 </LinearLayout>
@@ -161,12 +167,14 @@
                 android:layout_height="fill_parent"
                 android:orientation="horizontal">
 
-                <VideoView
-                    android:id="@+id/videoView4"
+                <ImageButton
+                    android:id="@+id/imageButton4"
                     android:layout_width="187dp"
                     android:layout_height="130dp"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp" />
+                    android:layout_marginTop="10dp"
+                    android:onClick="goVideoFlex4"
+                    app:srcCompat="@drawable/fvid4" />
 
                 <LinearLayout
                     android:layout_width="174dp"
@@ -187,7 +195,7 @@
                         android:layout_width="138dp"
                         android:layout_height="84dp"
                         android:layout_marginLeft="10dp"
-                        android:text="This video makes a great short workout on its own or a cool down to do after other workouts from this series.  This video is a workout with flexibility exercises to improve your leg flexibility. "
+                        android:text="This video makes a great short workout on its own or a cool down to do after other workouts from this series."
                         android:textSize="10dp" />
 
                 </LinearLayout>
@@ -200,7 +208,7 @@
 
                 <LinearLayout
                     android:layout_width="438dp"
-                    android:layout_height="155dp"
+                    android:layout_height="110dp"
                     android:orientation="vertical"
                     tools:layout_editor_absoluteX="231dp"
                     tools:layout_editor_absoluteY="404dp">
